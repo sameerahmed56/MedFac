@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".DoctorActivity"
+android:weightSum="1">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.08"/>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/doctor_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.92"
+        android:background="#1EBDB8"
+        app:itemTextColor="@drawable/patient_bottom_nav_colors"
+        app:itemIconTint="@drawable/patient_bottom_nav_colors"
+        app:menu="@menu/doctor_dashboard_menu"
+        android:foreground="?attr/selectableItemBackground"
+        />
+
+</LinearLayout>
+
+
+</LinearLayout>

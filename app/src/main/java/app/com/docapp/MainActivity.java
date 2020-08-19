@@ -29,7 +29,15 @@ public class MainActivity extends AppCompatActivity {
                 String emailValue = emailEditText.getText().toString();
                 String passValue = passEditText.getText().toString();
 
-                if(emailValue.equals("sameer") && passValue.equals("1234")) {
+                if(emailValue.equals("patient") && passValue.equals("1234")) {
+                    Intent myIntent = new Intent(MainActivity.this, DoctorActivity.class);
+                    MainActivity.this.startActivity(myIntent);
+                }
+                else if (emailValue.equals("doctor") && passValue.equals("1234")) {
+                    Intent myIntent = new Intent(MainActivity.this, PatientActivity.class);
+                    MainActivity.this.startActivity(myIntent);
+                }
+                else if (emailValue.equals("manager") && passValue.equals("1234")) {
                     Intent myIntent = new Intent(MainActivity.this, DoctorActivity.class);
                     MainActivity.this.startActivity(myIntent);
                 }

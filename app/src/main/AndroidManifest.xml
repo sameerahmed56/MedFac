@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DoctorActivity"></activity>
+        <activity android:name=".ManagerActivity"></activity>
+        <activity android:name=".DoctorActivity" />
         <activity android:name=".PatientActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

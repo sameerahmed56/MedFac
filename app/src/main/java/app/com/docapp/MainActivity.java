@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                     MainActivity.this.startActivity(myIntent);
                 }
                 else if (emailValue.equals("manager") && passValue.equals("1234")) {
-                    Intent myIntent = new Intent(MainActivity.this, DoctorActivity.class);
+                    Intent myIntent = new Intent(MainActivity.this, ManagerActivity.class);
                     MainActivity.this.startActivity(myIntent);
                 }
                 else{
